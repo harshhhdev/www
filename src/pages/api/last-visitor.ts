@@ -24,5 +24,11 @@ const locate = async () => {
   }
 };
 
-export const GET: APIRoute = async () =>
-  new Response(JSON.stringify({ ...(await locate()) }));
+export const GET: APIRoute = async () => {
+  if (process.env.VERCEL_ENV !== "production")
+    return new Response(JSON.stringify({ error: "Production only" }), {
+      status: 403,
+    });
+
+  return new Response(JSON.stringify({ ...(await locate()) }));
+};

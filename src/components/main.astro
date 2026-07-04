@@ -6,9 +6,11 @@ import Music from "./music.astro";
 <main>
   <section class="mt-24">
     <div
-      class="animate-intro relative left-1/2 flex w-[min(1024px,95vw)] -translate-x-1/2 flex-col gap-3 opacity-0 [animation-delay:0.4s] select-none"
+      class="animate-intro relative left-1/2 flex w-[min(1024px,95vw)] -translate-x-1/2 flex-col gap-3 opacity-0 select-none [animation-delay:0.4s]"
     >
-      <div class="flex flex-col gap-3 sm:grid sm:aspect-square sm:grid-cols-4 sm:grid-rows-4">
+      <div
+        class="flex flex-col gap-3 sm:grid sm:aspect-square sm:grid-cols-4 sm:grid-rows-4"
+      >
         <div class="grid grid-cols-2 gap-3 sm:contents">
           <div class="sm:col-start-1 sm:row-start-1">
             <Where />
@@ -21,7 +23,7 @@ import Music from "./music.astro";
           href="https://kmenu.dev"
           target="_blank"
           rel="noreferrer"
-          class="exclude relative block aspect-square overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-700 sm:col-span-2 sm:col-start-3 sm:row-span-2 sm:row-start-1"
+          class="exclude relative block aspect-square overflow-hidden rounded-2xl border border-neutral-200 sm:col-span-2 sm:col-start-3 sm:row-span-2 sm:row-start-1 dark:border-neutral-700"
         >
           <video
             autoplay
@@ -41,7 +43,7 @@ import Music from "./music.astro";
           >
           </div>
           <div
-            class="pointer-events-none absolute inset-x-0 bottom-0 mb-3 mx-2 flex items-baseline justify-between gap-2 px-2 text-white"
+            class="pointer-events-none absolute inset-x-0 bottom-0 mx-2 mb-3 flex items-baseline justify-between gap-2 px-2 text-white"
           >
             <span class="flex items-center gap-0.5 text-sm font-medium">
               kmenu
@@ -56,15 +58,14 @@ import Music from "./music.astro";
               >
                 <path
                   d="m19 15.477-.02-9.672a.802.802 0 0 0-.218-.577c-.145-.152-.34-.228-.587-.228H8.499a.751.751 0 0 0-.777.76c0 .199.076.371.227.517.15.145.326.218.525.218h3.733l4.52-.129-1.728 1.54-9.767 9.783a.692.692 0 0 0-.232.518c0 .205.078.387.235.545a.74.74 0 0 0 .542.237.73.73 0 0 0 .527-.224l9.775-9.78 1.544-1.727-.143 4.188v4.065c0 .199.075.376.225.531.15.155.327.232.531.232.202 0 .38-.076.534-.228a.768.768 0 0 0 .23-.569Z"
-                  fill="currentColor"
-                />
+                  fill="currentColor"></path>
               </svg>
             </span>
             <span class="shrink-0 text-sm text-neutral-300">2022</span>
           </div>
         </a>
         <div
-          class="relative aspect-[2/1] overflow-hidden rounded-2xl border border-neutral-200 bg-white dark:border-neutral-700 dark:bg-neutral-900 sm:aspect-auto sm:col-span-2 sm:col-start-1 sm:row-start-2"
+          class="relative aspect-[2/1] overflow-hidden rounded-2xl border border-neutral-200 bg-white sm:col-span-2 sm:col-start-1 sm:row-start-2 sm:aspect-auto dark:border-neutral-700 dark:bg-neutral-900"
         >
           <video
             autoplay
@@ -80,7 +81,7 @@ import Music from "./music.astro";
           </video>
         </div>
         <div
-          class="relative aspect-square overflow-hidden rounded-2xl border border-neutral-200 bg-white dark:border-neutral-700 dark:bg-neutral-900 sm:col-span-2 sm:col-start-1 sm:row-span-2 sm:row-start-3"
+          class="relative aspect-square overflow-hidden rounded-2xl border border-neutral-200 bg-white sm:col-span-2 sm:col-start-1 sm:row-span-2 sm:row-start-3 dark:border-neutral-700 dark:bg-neutral-900"
         >
           <video
             autoplay
@@ -99,7 +100,7 @@ import Music from "./music.astro";
           href="https://snip.tf"
           target="_blank"
           rel="noreferrer"
-          class="exclude relative block aspect-square overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-700 sm:col-start-3 sm:row-start-3"
+          class="exclude relative block aspect-square overflow-hidden rounded-2xl border border-neutral-200 sm:col-start-3 sm:row-start-3 dark:border-neutral-700"
         >
           <img
             src="/bento/snip.webp"
@@ -117,7 +118,7 @@ import Music from "./music.astro";
           >
           </div>
           <div
-            class="pointer-events-none absolute inset-x-0 bottom-0 mb-3 mx-2 flex items-baseline justify-between gap-2 px-2 text-white"
+            class="pointer-events-none absolute inset-x-0 bottom-0 mx-2 mb-3 flex items-baseline justify-between gap-2 px-2 text-white"
           >
             <span class="flex items-center gap-0.5 text-sm font-medium">
               Snip
@@ -132,8 +133,7 @@ import Music from "./music.astro";
               >
                 <path
                   d="m19 15.477-.02-9.672a.802.802 0 0 0-.218-.577c-.145-.152-.34-.228-.587-.228H8.499a.751.751 0 0 0-.777.76c0 .199.076.371.227.517.15.145.326.218.525.218h3.733l4.52-.129-1.728 1.54-9.767 9.783a.692.692 0 0 0-.232.518c0 .205.078.387.235.545a.74.74 0 0 0 .542.237.73.73 0 0 0 .527-.224l9.775-9.78 1.544-1.727-.143 4.188v4.065c0 .199.075.376.225.531.15.155.327.232.531.232.202 0 .38-.076.534-.228a.768.768 0 0 0 .23-.569Z"
-                  fill="currentColor"
-                />
+                  fill="currentColor"></path>
               </svg>
             </span>
             <span class="shrink-0 text-sm text-neutral-300">2020</span>
@@ -143,7 +143,7 @@ import Music from "./music.astro";
           href="https://qursor.harshsingh.me"
           target="_blank"
           rel="noreferrer"
-          class="exclude relative block aspect-square overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-700 sm:col-start-3 sm:row-start-4"
+          class="exclude relative block aspect-square overflow-hidden rounded-2xl border border-neutral-200 sm:col-start-3 sm:row-start-4 dark:border-neutral-700"
         >
           <video
             autoplay
@@ -158,7 +158,7 @@ import Music from "./music.astro";
             <source src="/bento/qursor.mp4" type="video/mp4" />
           </video>
           <div
-            class="pointer-events-none absolute inset-x-0 bottom-0 mb-3 mx-2 flex items-baseline justify-between gap-2 px-2 text-white"
+            class="pointer-events-none absolute inset-x-0 bottom-0 mx-2 mb-3 flex items-baseline justify-between gap-2 px-2 text-white"
           >
             <span class="flex items-center gap-0.5 text-sm font-medium">
               Qursor
@@ -173,8 +173,7 @@ import Music from "./music.astro";
               >
                 <path
                   d="m19 15.477-.02-9.672a.802.802 0 0 0-.218-.577c-.145-.152-.34-.228-.587-.228H8.499a.751.751 0 0 0-.777.76c0 .199.076.371.227.517.15.145.326.218.525.218h3.733l4.52-.129-1.728 1.54-9.767 9.783a.692.692 0 0 0-.232.518c0 .205.078.387.235.545a.74.74 0 0 0 .542.237.73.73 0 0 0 .527-.224l9.775-9.78 1.544-1.727-.143 4.188v4.065c0 .199.075.376.225.531.15.155.327.232.531.232.202 0 .38-.076.534-.228a.768.768 0 0 0 .23-.569Z"
-                  fill="currentColor"
-                />
+                  fill="currentColor"></path>
               </svg>
             </span>
             <span class="shrink-0 text-sm text-neutral-300">2021</span>
@@ -184,7 +183,7 @@ import Music from "./music.astro";
           href="https://dots.harshsingh.me"
           target="_blank"
           rel="noreferrer"
-          class="exclude relative block aspect-square overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-700 sm:aspect-auto sm:col-start-4 sm:row-span-2 sm:row-start-3"
+          class="exclude relative block aspect-square overflow-hidden rounded-2xl border border-neutral-200 sm:col-start-4 sm:row-span-2 sm:row-start-3 sm:aspect-auto dark:border-neutral-700"
         >
           <video
             autoplay
@@ -214,34 +213,17 @@ import Music from "./music.astro";
               >
                 <path
                   d="m19 15.477-.02-9.672a.802.802 0 0 0-.218-.577c-.145-.152-.34-.228-.587-.228H8.499a.751.751 0 0 0-.777.76c0 .199.076.371.227.517.15.145.326.218.525.218h3.733l4.52-.129-1.728 1.54-9.767 9.783a.692.692 0 0 0-.232.518c0 .205.078.387.235.545a.74.74 0 0 0 .542.237.73.73 0 0 0 .527-.224l9.775-9.78 1.544-1.727-.143 4.188v4.065c0 .199.075.376.225.531.15.155.327.232.531.232.202 0 .38-.076.534-.228a.768.768 0 0 0 .23-.569Z"
-                  fill="currentColor"
-                />
+                  fill="currentColor"></path>
               </svg>
             </span>
             <span class="shrink-0 text-sm text-neutral-300">2020</span>
           </div>
         </a>
       </div>
-      <div class="flex flex-col gap-3 sm:grid sm:grid-cols-2 sm:grid-flow-col sm:[grid-template-rows:repeat(5,auto)]">
-        <div
-          class="relative aspect-[2/1] overflow-hidden rounded-2xl border border-neutral-200 bg-[#FAFAFA] dark:border-neutral-700"
-        >
-          <video
-            autoplay
-            loop
-            muted
-            playsinline
-            preload="metadata"
-            disableRemotePlayback
-            class="lazy-video absolute inset-0 h-full w-full object-cover translate-x-1 object-[0%_30%]"
-          >
-            <source src="/bento/dynamic-island.webm" type="video/webm" />
-            <source src="/bento/dynamic-island.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <div class="grid grid-cols-2 gap-3">
+      <div class="flex flex-col gap-3 sm:grid sm:grid-cols-2">
+        <div class="grid aspect-square grid-rows-2 gap-3">
           <div
-            class="aspect-square overflow-hidden rounded-2xl border border-neutral-200 bg-white pl-1.5 dark:border-neutral-700"
+            class="relative overflow-hidden rounded-2xl border border-neutral-200 bg-[#FAFAFA] dark:border-neutral-700"
           >
             <video
               autoplay
@@ -250,91 +232,79 @@ import Music from "./music.astro";
               playsinline
               preload="metadata"
               disableRemotePlayback
-              class="lazy-video h-full w-full object-cover"
+              class="lazy-video absolute inset-0 h-full w-full translate-x-1 object-cover object-[0%_30%]"
             >
-              <source src="/bento/cmdk.webm" type="video/webm" />
-              <source src="/bento/cmdk.mp4" type="video/mp4" />
+              <source src="/bento/dynamic-island.webm" type="video/webm" />
+              <source src="/bento/dynamic-island.mp4" type="video/mp4" />
             </video>
           </div>
-          <div
-            class="flex aspect-square flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-white pb-1 dark:border-neutral-700 dark:bg-neutral-900"
-          >
-            <div class="relative flex-1 overflow-hidden border-b border-b-neutral-200 dark:border-b-neutral-700">
-              <img
-                src="/bento/blog_post_1.webp"
-                width="1000"
-                height="1000"
-                alt="Cover image for the Best Distros for Ricing essay"
-                draggable="false"
-                loading="lazy"
-                decoding="async"
-                class="h-full w-full object-cover"
-              />
-              <div
-                aria-hidden="true"
-                class="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-white via-white/80 to-transparent dark:from-neutral-900 dark:via-neutral-900/80"
-              >
-              </div>
-              <div
-                class="pointer-events-none absolute inset-x-0 bottom-0 flex items-baseline justify-between gap-2 px-2.5 pb-2"
-              >
-                <p
-                  class="truncate text-sm font-medium text-neutral-900 dark:text-neutral-50"
-                >
-                  Best Distros for Ricing
-                </p>
-                <p
-                  class="shrink-0 text-sm text-neutral-500 dark:text-neutral-400"
-                >
-                  2024
-                </p>
-              </div>
-            </div>
-            <a
-              href="/ricing"
-              class="exclude mt-1 flex items-center justify-center rounded-xl bg-neutral-200 px-3 mx-1 py-2 text-sm font-medium text-neutral-900 transition-colors hover:bg-neutral-300 dark:bg-neutral-800 dark:text-neutral-50 dark:hover:bg-neutral-700"
+          <div class="grid grid-cols-2 gap-3">
+            <div
+              class="overflow-hidden rounded-2xl border border-neutral-200 bg-white pl-1.5 dark:border-neutral-700"
             >
-              Read Essay
-            </a>
+              <video
+                autoplay
+                loop
+                muted
+                playsinline
+                preload="metadata"
+                disableRemotePlayback
+                class="lazy-video h-full w-full object-cover"
+              >
+                <source src="/bento/cmdk.webm" type="video/webm" />
+                <source src="/bento/cmdk.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div
+              class="flex flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-white pb-1 dark:border-neutral-700 dark:bg-neutral-900"
+            >
+              <div
+                class="relative flex-1 overflow-hidden border-b border-b-neutral-200 dark:border-b-neutral-700"
+              >
+                <img
+                  src="/bento/blog_post_1.webp"
+                  width="1000"
+                  height="1000"
+                  alt="Cover image for the Best Distros for Ricing essay"
+                  draggable="false"
+                  loading="lazy"
+                  decoding="async"
+                  class="h-full w-full object-cover"
+                />
+                <div
+                  aria-hidden="true"
+                  class="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-white via-white/80 to-transparent dark:from-neutral-900 dark:via-neutral-900/80"
+                >
+                </div>
+                <div
+                  class="pointer-events-none absolute inset-x-0 bottom-0 flex items-baseline justify-between gap-2 px-2.5 pb-2"
+                >
+                  <p
+                    class="truncate text-sm font-medium text-neutral-900 dark:text-neutral-50"
+                  >
+                    Best Distros for Ricing
+                  </p>
+                  <p
+                    class="shrink-0 text-sm text-neutral-500 dark:text-neutral-400"
+                  >
+                    2024
+                  </p>
+                </div>
+              </div>
+              <a
+                href="/ricing"
+                class="exclude mx-1 mt-1 flex items-center justify-center rounded-xl bg-neutral-200 px-3 py-2 text-sm font-medium text-neutral-900 transition-colors hover:bg-neutral-300 dark:bg-neutral-800 dark:text-neutral-50 dark:hover:bg-neutral-700"
+              >
+                Read Essay
+              </a>
+            </div>
           </div>
-        </div>
-        <div
-          class="relative aspect-square overflow-hidden rounded-2xl border border-neutral-200 bg-white dark:border-neutral-700 dark:bg-neutral-900 sm:aspect-auto sm:row-span-2"
-        >
-          <video
-            autoplay
-            loop
-            muted
-            playsinline
-            preload="metadata"
-            disableRemotePlayback
-            class="lazy-video absolute inset-0 h-full w-full object-cover"
-          >
-            <source src="/bento/delete.webm" type="video/webm" />
-            <source src="/bento/delete.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <div
-          class="relative aspect-[2/1] overflow-hidden rounded-2xl border border-yellow-600 bg-white dark:border-yellow-600 dark:bg-neutral-900"
-        >
-          <video
-            autoplay
-            loop
-            muted
-            playsinline
-            preload="metadata"
-            disableRemotePlayback
-            class="lazy-video absolute inset-0 h-full w-full object-cover object-center"
-          >
-            <source src="/bento/cards.webm" type="video/webm" />
-            <source src="/bento/cards.mp4" type="video/mp4" />
-          </video>
         </div>
         <a
           href="https://loomix.harshsingh.me"
           target="_blank"
           rel="noreferrer"
-          class="exclude relative block aspect-square overflow-hidden rounded-2xl border border-neutral-200 bg-white dark:border-neutral-700 dark:bg-neutral-900 sm:aspect-auto sm:row-span-2"
+          class="exclude relative block aspect-square overflow-hidden rounded-2xl border border-neutral-200 bg-white dark:border-neutral-700 dark:bg-neutral-900"
         >
           <video
             autoplay
@@ -354,7 +324,7 @@ import Music from "./music.astro";
           >
           </div>
           <div
-            class="pointer-events-none absolute inset-x-0 bottom-0 mb-3 mx-2 flex items-baseline justify-between gap-2 px-2 text-white"
+            class="pointer-events-none absolute inset-x-0 bottom-0 mx-2 mb-3 flex items-baseline justify-between gap-2 px-2 text-white"
           >
             <span class="flex items-center gap-0.5 text-sm font-medium">
               Loomix
@@ -369,15 +339,66 @@ import Music from "./music.astro";
               >
                 <path
                   d="m19 15.477-.02-9.672a.802.802 0 0 0-.218-.577c-.145-.152-.34-.228-.587-.228H8.499a.751.751 0 0 0-.777.76c0 .199.076.371.227.517.15.145.326.218.525.218h3.733l4.52-.129-1.728 1.54-9.767 9.783a.692.692 0 0 0-.232.518c0 .205.078.387.235.545a.74.74 0 0 0 .542.237.73.73 0 0 0 .527-.224l9.775-9.78 1.544-1.727-.143 4.188v4.065c0 .199.075.376.225.531.15.155.327.232.531.232.202 0 .38-.076.534-.228a.768.768 0 0 0 .23-.569Z"
-                  fill="currentColor"
-                />
+                  fill="currentColor"></path>
               </svg>
             </span>
             <span class="shrink-0 text-sm text-neutral-300">2026</span>
           </div>
         </a>
+      </div>
+      <div
+        class="flex flex-col gap-3 sm:grid sm:aspect-square sm:grid-cols-2 sm:grid-rows-4"
+      >
         <div
-          class="relative aspect-[2/1] overflow-hidden rounded-2xl border border-neutral-200 bg-white dark:border-neutral-700 dark:bg-neutral-900"
+          class="relative aspect-[2/1] overflow-hidden rounded-2xl border border-neutral-200 bg-white sm:col-start-1 sm:row-start-1 sm:aspect-auto dark:border-neutral-700 dark:bg-neutral-900"
+        >
+          <video
+            autoplay
+            loop
+            muted
+            playsinline
+            preload="metadata"
+            disableRemotePlayback
+            class="lazy-video absolute inset-0 h-full w-full object-cover"
+          >
+            <source src="/bento/image-transition.webm" type="video/webm" />
+            <source src="/bento/image-transition.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div
+          class="relative aspect-square overflow-hidden rounded-2xl border border-neutral-200 bg-white sm:col-start-1 sm:row-span-2 sm:row-start-2 sm:aspect-auto dark:border-neutral-700 dark:bg-neutral-900"
+        >
+          <video
+            autoplay
+            loop
+            muted
+            playsinline
+            preload="metadata"
+            disableRemotePlayback
+            class="lazy-video absolute inset-0 h-full w-full object-cover"
+          >
+            <source src="/bento/delete.webm" type="video/webm" />
+            <source src="/bento/delete.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div
+          class="relative aspect-[2/1] overflow-hidden rounded-2xl border border-yellow-600 bg-white sm:col-start-1 sm:row-start-4 sm:aspect-auto dark:border-yellow-600 dark:bg-neutral-900"
+        >
+          <video
+            autoplay
+            loop
+            muted
+            playsinline
+            preload="metadata"
+            disableRemotePlayback
+            class="lazy-video absolute inset-0 h-full w-full object-cover object-center"
+          >
+            <source src="/bento/cards.webm" type="video/webm" />
+            <source src="/bento/cards.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div
+          class="relative aspect-[2/1] overflow-hidden rounded-2xl border border-neutral-200 bg-white sm:col-start-2 sm:row-start-1 sm:aspect-auto dark:border-neutral-700 dark:bg-neutral-900"
         >
           <video
             autoplay
@@ -392,9 +413,9 @@ import Music from "./music.astro";
             <source src="/bento/slides.mp4" type="video/mp4" />
           </video>
         </div>
-        <div class="grid grid-cols-2 gap-3">
+        <div class="grid grid-cols-2 gap-3 sm:col-start-2 sm:row-start-2">
           <div
-            class="relative aspect-square overflow-hidden rounded-2xl border border-neutral-200 bg-white dark:border-neutral-700 dark:bg-neutral-900"
+            class="relative aspect-square overflow-hidden rounded-2xl border border-neutral-200 bg-white sm:aspect-auto dark:border-neutral-700 dark:bg-neutral-900"
           >
             <video
               autoplay
@@ -410,7 +431,7 @@ import Music from "./music.astro";
             </video>
           </div>
           <div
-            class="relative aspect-square overflow-hidden rounded-2xl border border-neutral-200 bg-white dark:border-neutral-700 dark:bg-neutral-900"
+            class="relative aspect-square overflow-hidden rounded-2xl border border-neutral-200 bg-white sm:aspect-auto dark:border-neutral-700 dark:bg-neutral-900"
           >
             <video
               autoplay
@@ -427,7 +448,7 @@ import Music from "./music.astro";
           </div>
         </div>
         <div
-          class="relative aspect-[2/1] dark:border-neutral-700 overflow-hidden rounded-2xl border border-neutral-200 bg-[#171717] dark:bg-neutral-900"
+          class="relative aspect-square overflow-hidden rounded-2xl border border-neutral-200 bg-white sm:col-start-2 sm:row-span-2 sm:row-start-3 sm:aspect-auto dark:border-neutral-700 dark:bg-neutral-900"
         >
           <video
             autoplay
@@ -436,10 +457,128 @@ import Music from "./music.astro";
             playsinline
             preload="metadata"
             disableRemotePlayback
-            class="lazy-video absolute inset-0 h-full w-full object-cover translate-x-1"
+            class="lazy-video absolute inset-0 h-full w-full object-cover"
+          >
+            <source src="/bento/gallery.webm" type="video/webm" />
+            <source src="/bento/gallery.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+      <div
+        class="flex flex-col gap-3 sm:grid sm:aspect-square sm:grid-cols-2 sm:grid-rows-4"
+      >
+        <div class="grid grid-cols-2 gap-3 sm:col-start-1 sm:row-start-1">
+          <div
+            class="relative aspect-square overflow-hidden rounded-2xl border border-neutral-200 bg-white sm:aspect-auto dark:border-neutral-700"
+          >
+            <video
+              autoplay
+              loop
+              muted
+              playsinline
+              preload="metadata"
+              disableRemotePlayback
+              class="lazy-video absolute inset-0 h-full w-full translate-x-[10px] object-cover"
+            >
+              <source src="/bento/switch.webm" type="video/webm" />
+              <source src="/bento/switch.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div
+            class="relative aspect-square overflow-hidden rounded-2xl border border-neutral-200 bg-white sm:aspect-auto dark:border-neutral-700 dark:bg-neutral-900"
+          >
+            <video
+              autoplay
+              loop
+              muted
+              playsinline
+              preload="metadata"
+              disableRemotePlayback
+              class="lazy-video absolute inset-0 h-full w-full object-cover"
+            >
+              <source src="/bento/logo-animation.webm" type="video/webm" />
+              <source src="/bento/logo-animation.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <div
+          class="relative aspect-[2/1] overflow-hidden rounded-2xl border border-neutral-200 bg-[#171717] sm:col-start-1 sm:row-start-2 sm:aspect-auto dark:border-neutral-700 dark:bg-neutral-900"
+        >
+          <video
+            autoplay
+            loop
+            muted
+            playsinline
+            preload="metadata"
+            disableRemotePlayback
+            class="lazy-video absolute inset-0 h-full w-full translate-x-1 object-cover"
           >
             <source src="/bento/round-and-round.webm" type="video/webm" />
             <source src="/bento/round-and-round.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div
+          class="relative aspect-square overflow-hidden rounded-2xl border border-neutral-200 bg-white sm:col-start-1 sm:row-span-2 sm:row-start-3 sm:aspect-auto dark:border-neutral-700 dark:bg-neutral-900"
+        >
+          <video
+            autoplay
+            loop
+            muted
+            playsinline
+            preload="metadata"
+            disableRemotePlayback
+            class="lazy-video absolute inset-0 h-full w-full object-cover"
+          >
+            <source src="/bento/chat.webm" type="video/webm" />
+            <source src="/bento/chat.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div
+          class="relative aspect-[2/1] overflow-hidden rounded-2xl border border-neutral-200 bg-white sm:col-start-2 sm:row-start-1 sm:aspect-auto dark:border-neutral-700 dark:bg-neutral-900"
+        >
+          <video
+            autoplay
+            loop
+            muted
+            playsinline
+            preload="metadata"
+            disableRemotePlayback
+            class="lazy-video absolute inset-0 h-full w-full object-cover"
+          >
+            <source src="/bento/input.webm" type="video/webm" />
+            <source src="/bento/input.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div
+          class="relative aspect-square overflow-hidden rounded-2xl border border-neutral-200 bg-white sm:col-start-2 sm:row-span-2 sm:row-start-2 sm:aspect-auto dark:border-neutral-700 dark:bg-neutral-900"
+        >
+          <video
+            autoplay
+            loop
+            muted
+            playsinline
+            preload="metadata"
+            disableRemotePlayback
+            class="lazy-video absolute inset-0 h-full w-full object-cover"
+          >
+            <source src="/bento/stacked-gallery.webm" type="video/webm" />
+            <source src="/bento/stacked-gallery.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div
+          class="relative aspect-[2/1] overflow-hidden rounded-2xl border border-neutral-200 bg-white sm:col-start-2 sm:row-start-4 sm:aspect-auto dark:border-neutral-700"
+        >
+          <video
+            autoplay
+            loop
+            muted
+            playsinline
+            preload="metadata"
+            disableRemotePlayback
+            class="lazy-video absolute inset-0 h-full w-full translate-x-1 object-cover"
+          >
+            <source src="/bento/forms.webm" type="video/webm" />
+            <source src="/bento/forms.mp4" type="video/mp4" />
           </video>
         </div>
       </div>

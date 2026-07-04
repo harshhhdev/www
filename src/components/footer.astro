@@ -9,6 +9,7 @@ const { isHome = false } = Astro.props;
     fetch("/api/last-visitor", { priority: "low" } as RequestInit)
       .then((res) => res.json())
       .then((data) => {
+        if (!data.result) return;
         const lastVisitElement = document.querySelector(".last-visit");
         if (lastVisitElement) {
           lastVisitElement.textContent = data.result;

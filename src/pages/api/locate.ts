@@ -23,6 +23,11 @@ const locate = async (ip: string) => {
 };
 
 export const GET: APIRoute = async (props) => {
+  if (process.env.VERCEL_ENV !== "production")
+    return new Response(JSON.stringify({ error: "Production only" }), {
+      status: 403,
+    });
+
   const status = await locate(props.clientAddress);
 
   return new Response(

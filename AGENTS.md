@@ -11,9 +11,12 @@
 - When committing on this repo, branch off `master` into a `cursor/<topic>` branch, stage only related files, write a concise message, and push.
 - When swapping or reordering bento cards, preserve each card's original aspect ratio and dimensions; never silently resize a card as a side effect of moving another.
 - Scope edits narrowly: when asked to move/modify one specific block or column, do not touch unrelated blocks, columns, or files in the same change.
-- Structure masonry grids column-per-column (each column is its own flex/stack container), not row-per-row, so paired-square cards can sit inside a single column without breaking alignment with taller neighbors.
+- Structure the bento row-per-row, not as independent masonry columns: each row is `flex flex-col gap-3 sm:grid sm:grid-cols-2` holding two large-square slots. A slot is either a single `aspect-square` card or an `aspect-square` wrapper subdivided with inner grids (`grid-rows-2` / `grid-cols-2`, `gap-3`) whose cards have no aspect classes of their own — this keeps slot heights identical because the gap is inside the square. Independent columns drift because `aspect-[2/1]` halves stacked with a gap are taller than one square.
 - For text/metadata overlays on media cards, render the media at full card size and absolutely position the text container (e.g. with `m-1`) on top; do not inset, shrink, or pad the video to make room for text.
 - When cropping videos via ffmpeg for bento cards, use a pure crop filter (no `scale`) — rescaling makes the result visibly blurry.
+- The bento gallery has exactly 4 block kinds, and every card must be one of them: (1) large full-scale square; (2) horizontal half rectangle — 2 stacked vertically equal one large square including padding/gap; (3) vertical half rectangle — 2 side by side equal one large square including padding/gap; (4) small square — 4 of them (2 top, 2 bottom) including padding/gap equal one large square. Never use arbitrary aspect ratios (e.g. a video's native ratio) for a card.
+- Each bento row spans the space of 2 large squares; fill that row with any combination of the 4 block kinds.
+- Half rows also exist: half the height of a normal row, two slots wide. Each half-row slot may only hold one horizontal half rectangle or 2 small squares.
 
 ## Learned Workspace Facts
 
