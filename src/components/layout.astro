@@ -43,11 +43,29 @@ const personSchema = {
   "@type": "Person",
   "@id": PERSON_ID,
   name: "Harsh Singh",
+  givenName: "Harsh",
+  familyName: "Singh",
   alternateName: ["haaarshsingh", "Harsh"],
+  description:
+    "Software engineer and technical lead based in Austin, Texas. Leads the engineering team at MainBranch, building AI agents for the public sector.",
   url: SITE_URL,
+  mainEntityOfPage: SITE_URL,
   image: "https://github.com/haaarshsingh.png",
+  email: "mailto:h@harshsingh.me",
   jobTitle: "Software Engineer",
-  worksFor: { "@type": "Organization", name: "Harsh Singh" },
+  worksFor: {
+    "@type": "Organization",
+    name: "MainBranch",
+    url: "https://mainbranch.com",
+  },
+  knowsAbout: [
+    "Software engineering",
+    "AI agents",
+    "Web development",
+    "TypeScript",
+    "Design engineering",
+    "User interface design",
+  ],
   address: {
     "@type": "PostalAddress",
     addressLocality: "Austin",
@@ -75,6 +93,21 @@ const websiteSchema = {
   author: { "@id": PERSON_ID },
   publisher: { "@id": PERSON_ID },
 };
+
+const profilePageSchema = isHome
+  ? {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "@id": `${SITE_URL}/#profile`,
+      url: SITE_URL,
+      name: pageTitle,
+      description,
+      inLanguage: "en-US",
+      isPartOf: { "@id": WEBSITE_ID },
+      about: { "@id": PERSON_ID },
+      mainEntity: { "@id": PERSON_ID },
+    }
+  : null;
 
 const blogPostingSchema =
   type === "article"
@@ -141,7 +174,7 @@ const blogPostingSchema =
     <meta name="description" content={description} />
     <meta name="theme-color" content="#E5E5E5" />
     <link rel="canonical" href={canonicalUrl} />
-    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="sitemap" href="/sitemap.xml" />
     <link
       rel="alternate"
       type="application/rss+xml"
@@ -160,6 +193,10 @@ const blogPostingSchema =
     <meta name="googlebot" content={robotsContent} />
     <meta name="category" content="technology" />
     <meta name="me" content="h@harshsingh.me" />
+    <link rel="me" href="https://x.com/haaarshsingh" />
+    <link rel="me" href="https://github.com/haaarshsingh" />
+    <link rel="me" href="https://www.linkedin.com/in/haaarshsingh" />
+    <link rel="me" href="mailto:h@harshsingh.me" />
 
     <meta
       name="google-site-verification"
@@ -215,6 +252,15 @@ const blogPostingSchema =
       type="application/ld+json"
       set:html={JSON.stringify(websiteSchema)}
     />
+    {
+      profilePageSchema && (
+        <script
+          is:inline
+          type="application/ld+json"
+          set:html={JSON.stringify(profilePageSchema)}
+        />
+      )
+    }
 
     <script
       defer
