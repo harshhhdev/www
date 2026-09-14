@@ -13,7 +13,6 @@
     "@astrojs/check": "0.9.6",
     "@astrojs/mdx": "^4.3.13",
     "@astrojs/rss": "4.0.14",
-    "@astrojs/sitemap": "3.6.0",
     "@astrojs/vercel": "9.0.2",
     "@vercel/og": "^0.8.6",
     "astro": "5.16.6",

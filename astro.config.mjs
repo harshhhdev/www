@@ -1,4 +1,3 @@
-import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 import vercel from "@astrojs/vercel";
 import { defineConfig } from "astro/config";
@@ -8,12 +7,7 @@ import rehypeExternalLinks from "rehype-external-links";
 // https://astro.build/config
 export default defineConfig({
   site: "https://www.harshsingh.me",
-  integrations: [
-    sitemap({
-      filter: (page) => !/\/shortener(\/|$)/.test(new URL(page).pathname),
-    }),
-    mdx(),
-  ],
+  integrations: [mdx()],
   vite: {
     plugins: [tailwindcss()],
   },
